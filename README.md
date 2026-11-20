@@ -1,11 +1,14 @@
 # The World in One Day — Friday 20 November 2026
 
-A one-page newspaper front page summing up 20 November 2026 in
-**35 verified stories across 6 regions**: 3 full-width hero stories,
-10 mid stories, 22 more in the ALSO index, plus a stat strip, a world
-map, a verdict, a sourcing legend, markets, and a DATE CHECK strip
-that lists the stories deliberately left out because they happened
-earlier.
+[![make.fun · news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![rank](https://make.fun/badge/news-image-20261120/danikluue-max/makefun-news-image-20261120-r3/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![reward](https://make.fun/badge/news-image-20261120/danikluue-max/makefun-news-image-20261120-r3/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+
+An entry for the make.fun bounty [Sum up 20 November's world news in one image](https://make.fun/bounty/news-image-20261120): a one-page newspaper front page summing up 20 November 2026 in **35 verified stories across 6 regions** — 3 full-width hero stories, 10 mid stories, 22 more in the ALSO index, plus a stat strip, a world map, a verdict, a sourcing legend, markets, and a DATE CHECK strip that lists the stories deliberately left out because they happened earlier. Round 3 is a thumbnail-first redesign: the page is designed to read instantly at the 300px thumbnail view (masthead + 3 hero headlines + 6 stat numbers) while keeping all 35 stories and the same facts.
+
+Bounty: https://make.fun/bounty/news-image-20261120
+
+Referral code: `0zdpscn2`
 
 ## Round 3 — thumbnail-first redesign
 
@@ -39,6 +42,15 @@ Round 3 designs **for the 300px view first**:
 primitives at 2x and downscales to 1024x1024. `main.ts` (Node 22,
 standard library only) verifies `entry.png` (PNG, 1024x1024, ≤ 1 MiB)
 and copies it to the output directory.
+
+## Run
+
+```sh
+node main.ts
+```
+
+`main.ts` verifies `entry.png` and copies it to `/output` (or
+`$MAKEFUN_OUTPUT_DIR` when set).
 
 ## Verify
 
